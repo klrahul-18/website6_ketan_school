@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+}
+:root {
+  --bg-light-orange: #fdf6ed;
+}
+/* Universal CSS Start */
+.text-orange {
+  color: #ea512e;
+}
+.text-black {
+  color: #1b0238;
+}
+.text-silver {
+  color: #6b6b84;
+}
+.bg-light-orange {
+  background: #fdf6ed;
+}
+.bg-orange {
+  background: #ea512e;
+}
+.bg-light-yellow {
+  background: #fee9ca;
+}
+.bg-yellow {
+  background: #f5890d !important;
+}
+.fw-4 {
+  font-weight: 400;
+}
+.fw-6 {
+  font-weight: 600;
+}
+.mt-10 {
+  margin-top: 100px;
+}
+.mt-15 {
+  margin-top: 150px;
+}
+.mt-20 {
+  margin-top: 126px;
+}
+.pb-70 {
+  padding-bottom: 70px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.pb-100 {
+  padding-bottom: 100px;
+}
+.btn {
+  color: #fff;
+  display: inline-block;
+  padding: 12px 35px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.5s ease;
+  position: relative;
+  background: #ea512e;
+}
+.btn:hover {
+  color: #fff;
+  background: #f5890d;
+}
+p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #6b6b84;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1b0238;
+  font-family: "Catamaran", sans-serif;
+  font-weight: bold;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+/* Universal CSS End */
+
+/* Nav section Start */
+a.active {
+  color: #ea512e !important;
+}
+a.nav-link:hover,
+a.dropdown-item:hover {
+  color: #ea512e !important;
+  transition: 0.2s linear;
+}
+.dropdown-menu {
+  width: 280px;
+  border: none;
+  border-radius: 0px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 0px 15px 0px #ccc;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 10px;
+}
+/* Nav section End */
+
+/* Banner Section Start */
+.banner {
+  width: 100%;
+  height: 700px;
+  background: url(../img/main-banner-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.shape-1 {
+  top: 3.5%;
+  left: 0.7%;
+  animation: move 2s linear alternate infinite;
+}
+.shape-2 {
+  top: 3.5%;
+  left: 50%;
+  animation: move2 2s linear alternate infinite;
+}
+.shape-3 {
+  top: 61%;
+  left: 0.7%;
+  z-index: 9;
+  animation: move 2s linear alternate infinite;
+}
+.shape-4 {
+  top: 3.5%;
+  left: 0.7%;
+  animation: move 2s linear alternate infinite;
+}
+.banner h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  color: #1b0238;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* Banner Section End */
+
+/* BTN Section Start */
+.buy-now-btn {
+  right: 30px;
+  z-index: 99;
+  top: 50%;
+  position: fixed;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 30px;
+  display: inline-block;
+  color: #ffffff !important;
+  background-color: #82b440;
+  padding: 10px 20px 10px 42px;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-animation-name: tada;
+  animation-name: tada;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.buy-now-btn img {
+  top: 50%;
+  left: 20px;
+  width: 15px;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.buy-now-btn:hover {
+  background-color: #ea512e;
+  color: #ffffff !important;
+}
+
+/* /BTN Section End */
+/* Who we are section start */
+.who span,
+.popular span,
+.teacher span,
+.upcoming span,
+.core-value span,
+.testimonial span {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ea512e;
+  font-family: "Sacramento", cursive;
+}
+.who h3,
+.popular h3,
+.teacher h3,
+.upcoming h3,
+.core-value h3,
+.testimonial h3 {
+  font-size: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.who .image {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.who .image::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ea512e;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 50%;
+  transition: 0.5s;
+  animation: border-transform-default 10s linear infinite alternate forwards;
+}
+.who .image img {
+  border-radius: 50%;
+  padding: 20px;
+}
+.who .image::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #f5890d;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 50%;
+  transition: 0.5s;
+  animation: border-transform-default 50s linear infinite alternate forwards;
+}
+
+.who ul li {
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.who ul li span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ea512e;
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 6px;
+  transition: all 0.5s;
+  font-family: "Catamaran", sans-serif;
+}
+.who ul li:hover span {
+  background: #f5890d;
+  transition: all 1s ease-in;
+}
+/* Who we are section end */
+/* Popular class section start */
+.popular .card:hover img {
+  /* transform: scale(1.07); */
+  transform: rotate(2deg) scale(1.2);
+  transition: all 0.3s linear;
+}
+/* Popular class section end */
+
+/* core value section start */
+.core-value .number {
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 1.5%;
+  margin-right: 20px;
+  font-size: 25px;
+  color: #1b0238;
+  border: 3px solid #fff;
+  outline: 1px solid #e5e4e4;
+  outline-offset: 2px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-family: "Catamaran", sans-serif;
+}
+.core-value .number:hover {
+  color: #fff;
+  transition: 0.5s;
+  background: #ea512e !important;
+  outline-color: #ea512e;
+  z-index: 1;
+}
+/* core value section end */
+
+/* Teacher Section Start */
+.teacher {
+  background: url(../img/teacher-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -9 !important;
+}
+.teacher .social-media {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -70px;
+  transition: all 0.5s ease-in;
+}
+.teacher .teacher-image {
+  z-index: 9 !important;
+}
+.teacher .teacher-image::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #ea512e;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 50%;
+  transition: 0.5s;
+  animation: border-transform-default 20s linear infinite alternate forwards;
+}
+
+.teacher .teacher-image:hover .social-media {
+  margin-bottom: 0px;
+  transition: all 0.5s ease-out;
+}
+.teacher .social-media li {
+  width: 30px;
+  height: 30px;
+  line-height: 32px;
+  background: #ea512e;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.teacher .social-media li a {
+  color: white;
+}
+.teacher .social-media li:hover {
+  background: #f5890d;
+  transition: 0.3s ease;
+}
+/* /Teacher Section End */
+
+/* Testimonial Section Start */
+.card.teacher {
+  height: auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 49%;
+  border: none;
+  background-color: #fee9ca;
+}
+.card.teacher div {
+  width: 65px;
+  height: auto;
+  line-height: 75px;
+  border-radius: 50%;
+  background: #fff;
+  margin: auto;
+  transition: all 0.3s linear;
+  margin-bottom: 10px;
+}
+.card.teacher:hover div {
+  background: #ea512e;
+  transition: all 0.3s linear;
+}
+.card.teacher:hover div .fa-quote-left {
+  color: #fff !important;
+  transition: all 0.3s linear;
+}
+
+.testimonial .nav-button button {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 10px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ea512e;
+  transition: 0.3s linear;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.testimonial .nav-button button:hover {
+  background: #f5890d;
+  transition: 0.3s linear;
+}
+/* /Testimonial Section End */
+
+/* Tetimoniel Section Start */
+.slider-wrap {
+  position: relative;
+  overflow-x: hidden;
+  height: 100px;
+}
+.slider-main {
+  position: absolute;
+  width: 200%;
+}
+.item {
+  width: 400px;
+  display: inline-block;
+}
+.item .card {
+  transition: 0.5s ease-in-out;
+}
+/* Tetimoniel Section End */
+/* upcoming event section start */
+.upcoming {
+  position: relative;
+  background: url(../img/event-bg.jpg);
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* /upcoming event section end */
+
+/* Footer Section Start */
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../img/footer-bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+footer .social {
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  border-radius: 50%;
+  background: #ea512e;
+}
+footer h3::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  background-color: #ea512e;
+}
+footer .contact a:hover {
+  color: #ea512e !important;
+  /* border-bottom: 2px solid #ea512e; */
+  transition: 0.5s;
+}
+footer .contact a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.5s;
+}
+footer .contact a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+  background-color: #ea512e;
+}
+/* /Footer Section End */
+
+/* Copyright Section Start */
+
+.copyright-area {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #091629;
+}
+
+.copyright-area .copyright-area-content {
+  text-align: center;
+}
+
+.copyright-area .copyright-area-content p {
+  color: #ffffff;
+}
+
+.copyright-area .copyright-area-content p a {
+  display: inline-block;
+  font-weight: 600;
+  color: #ea512e;
+}
+
+.copyright-area .copyright-area-content p a:hover {
+  color: #ffffff;
+}
+.copyright-area .copyright-area-content p a {
+  display: inline-block;
+  font-weight: 600;
+  color: #ea512e;
+}
+a {
+  text-decoration: none;
+}
+/* /Copyright Section End */
+
+@keyframes rotate2 {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -3deg);
+  }
+  100% {
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 3deg);
+  }
+}
+
+@keyframes move {
+  0% {
+  }
+  100% {
+    left: 3%;
+  }
+}
+@keyframes move2 {
+  0% {
+  }
+  100% {
+    left: 53%;
+  }
+}
+
+@keyframes border-transform-default {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
